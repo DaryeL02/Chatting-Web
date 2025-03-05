@@ -1,0 +1,68 @@
+
+html, body{
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit; 
+}
+.main{
+    height: 100%;
+    display: flex;
+}
+.sec_1{
+    background-color: #25262d;
+    height: 100%;
+    width: 15%;
+}
+.sec_2{
+    background-color: #2e2f38;
+    height: 100%;
+    width: 85%;
+}
+.sec_1A, .sec_2A{
+    height: 4.5rem;
+    border-bottom: 1px solid #000000;
+}
+.sec_1A{
+    display: flex;
+    justify-content: center;
+}
+.sec_2A{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: unset;
+    font-size: large;
+    color: #c7c8d1;
+}
+.sec_1B, .sec_2B{
+    height: 93%;
+}
+.logo{
+    height: 100%;
+    width: max-content;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+}
+.sec_2B{
+    display: flex;
+    flex-direction: column;
+ 
+}
+.chat{
+    width: 100%;
+    flex: 1;
+    background-color: red;
+}
+.input{
+    background-color: green;
+    width: 100%;
+    height: 5rem;
+}
