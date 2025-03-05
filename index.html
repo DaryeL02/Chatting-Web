@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" async></script>
     <title>Chatting web</title>
 </head>
 <body>
@@ -27,10 +29,13 @@
             </div>
             <div class="sec_2B">
                 <div class="chat">
+                    <div class="chat_container" id="chat_container">
 
+                    </div>
                 </div>
                 <div class="input">
-
+                    <input type="text" placeholder="Escribe aquí..." class="input_text" onkeydown="enter_is_pressed(event)" id="input_field">
+                    <button class="input_button"><img src="./images/send_icon.svg" alt=""></button>
                 </div>
             </div>
         </div>

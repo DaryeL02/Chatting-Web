@@ -1,4 +1,7 @@
-
+:root{
+    --color_1: #25262d; /*columna izquierda*/
+    --color_2: #2e2f38; /*columna derecha*/
+}
 html, body{
     height: 100%;
     margin: 0;
@@ -12,14 +15,18 @@ html, body{
     display: flex;
 }
 .sec_1{
-    background-color: #25262d;
+    background-color: var(--color_1);
     height: 100%;
-    width: 15%;
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
 }
 .sec_2{
-    background-color: #2e2f38;
+    background-color: var(--color_2);
     height: 100%;
-    width: 85%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 .sec_1A, .sec_2A{
     height: 4.5rem;
@@ -59,10 +66,61 @@ html, body{
 .chat{
     width: 100%;
     flex: 1;
-    background-color: red;
+    background-color: var(--color_2);
+    display: flex;
 }
 .input{
-    background-color: green;
+    background-color: #2e2f38;
     width: 100%;
-    height: 5rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+}
+.input_text{
+    flex: 1;
+    height: 60%;
+    padding: 0 20px;
+    margin-left: 1rem;
+    margin-right: 10px;
+    font-family: "Encode Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    font-size: large;
+    color: #25262d;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+}
+.input_text::placeholder{
+    color: #c7c8d1;
+}
+.input_button{
+    margin-right: 1rem;
+}
+button {
+    background: none;
+}
+.chat_container{
+    background-color: var(--color_2);
+    margin: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.chat_message{
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: "Encode Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
 }
